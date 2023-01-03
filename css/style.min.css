@@ -2556,6 +2556,7 @@ body {
 @media (max-width: 992px) {
   .wrapper .main .supervisor .supervisor_content .about_supervisor {
     align-items: center;
+    gap: 0.625rem;
   }
 }
 .wrapper .main .supervisor .supervisor_content .about_supervisor h3 {
@@ -2787,5 +2788,4 @@ body {
 @media (max-width: 768px) {
   .wrapper .footer .footer_content .contacts_footer {
     flex: none;
-  }
-}
+ 
