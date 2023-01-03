@@ -86,9 +86,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 body {
   font-family: "Geometria";
-  font-size: 1rem;
-  line-height: 1.875rem;
+  font-size: 16px;
+  line-height: 30px;
   color: #000000;
+}
+@media (max-width: 1170px) {
+  body {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  body {
+    line-height: calc(18px + 12 * ((100vw - 320px) / 850));
+  }
 }
 
 ._overflow {
@@ -157,7 +167,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 12.5rem;
+  min-height: 200px;
+}
+@media (max-width: 1170px) {
+  .wrapper .header .header_content .header_top {
+    min-height: calc(150px + 50 * ((100vw - 320px) / 850));
+  }
 }
 .wrapper .header .header_content .header_top .menu_icon {
   display: block;
@@ -314,9 +329,15 @@ body {
     line-height: calc(39px + 10 * ((100vw - 320px) / 850));
   }
 }
+@media (max-width: 992px) {
+  .wrapper .header .header_content .header_top .telephone_block .telephone {
+    margin-top: 0;
+  }
+}
 @media (max-width: 576px) {
   .wrapper .header .header_content .header_top .telephone_block .telephone {
     color: #fff;
+    margin-top: 1.5rem;
   }
 }
 .wrapper .header .header_content .header_top .telephone_block .telephone:hover {
@@ -349,6 +370,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
+}
+@media (max-width: 992px) {
+  .wrapper .header .header_content .header_bottom {
+    gap: 0.625rem;
+  }
 }
 @media (max-width: 768px) {
   .wrapper .header .header_content .header_bottom {
@@ -478,6 +504,11 @@ body {
 .wrapper .header .header_content .header_bottom .real_estate_btn {
   margin-bottom: 5.125rem;
 }
+@media (max-width: 576px) {
+  .wrapper .header .header_content .header_bottom .real_estate_btn {
+    margin-top: 20px;
+  }
+}
 @media (max-width: 400px) {
   .wrapper .header .header_content .header_bottom .real_estate_btn {
     width: 90%;
@@ -552,7 +583,7 @@ body {
 }
 @media (max-width: 1170px) {
   .wrapper .main .test .test_content .test_losung p {
-    line-height: calc(38px + 10 * ((100vw - 320px) / 850));
+    line-height: calc(28px + 20 * ((100vw - 320px) / 850));
   }
 }
 .wrapper .main .test .test_content .test_location_body {
@@ -826,16 +857,61 @@ body {
 .wrapper .main .test .test_content .test_location_body .test_location_check {
   flex: 0 0 33.333%;
   height: 100%;
-  padding: 2.5rem;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+@media (max-width: 1170px) {
+  .wrapper .main .test .test_content .test_location_body .test_location_check {
+    padding-top: calc(10px + 30 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .wrapper .main .test .test_content .test_location_body .test_location_check {
+    padding-right: calc(10px + 30 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .wrapper .main .test .test_content .test_location_body .test_location_check {
+    padding-bottom: calc(10px + 30 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .wrapper .main .test .test_content .test_location_body .test_location_check {
+    padding-left: calc(10px + 30 * ((100vw - 320px) / 850));
+  }
 }
 .wrapper .main .test .test_content .test_location_body .test_location_check .test_location_check_list {
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
 }
+@media (max-width: 992px) {
+  .wrapper .main .test .test_content .test_location_body .test_location_check .test_location_check_list {
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper .main .test .test_content .test_location_body .test_location_check .test_location_check_list {
+    gap: 0.625rem;
+  }
+}
 .wrapper .main .test .test_content .test_location_body .test_location_check .test_location_check_list li {
   position: relative;
   padding-left: 4.0625rem;
+  font-size: 16px;
+  line-height: 30px;
+}
+@media (max-width: 1170px) {
+  .wrapper .main .test .test_content .test_location_body .test_location_check .test_location_check_list li {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 850));
+  }
+}
+@media (max-width: 1170px) {
+  .wrapper .main .test .test_content .test_location_body .test_location_check .test_location_check_list li {
+    line-height: calc(20px + 10 * ((100vw - 320px) / 850));
+  }
 }
 .wrapper .main .test .test_content .test_location_body .test_location_check .test_location_check_list li::before {
   content: "";
@@ -1627,7 +1703,7 @@ body {
 }
 @media (max-width: 1170px) {
   .wrapper .main .choise_appartment .choise_appartment_content .choise_appartment_losung h2 {
-    line-height: calc(38px + 10 * ((100vw - 320px) / 850));
+    line-height: calc(30px + 18 * ((100vw - 320px) / 850));
   }
 }
 .wrapper .main .choise_appartment .choise_appartment_content .choise_appartment_losung p {
